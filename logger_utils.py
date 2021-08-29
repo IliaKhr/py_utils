@@ -11,3 +11,4 @@ formatter = logging.Formatter(
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 logger.propagate = False
+logger.info('Logger настроен и работает')
