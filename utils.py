@@ -11,7 +11,6 @@ formatter = logging.Formatter(
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 logger.propagate = False
-logger.info('Logger настроен и работает')
 
 
 def fast_df_apply(df, func):
@@ -27,3 +26,5 @@ def fast_df_apply(df, func):
         index.append(row[0])
 
     return pd.Series(data, index=index)
+
+logger.info('Библиотека импортирована')
