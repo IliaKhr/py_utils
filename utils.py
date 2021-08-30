@@ -16,7 +16,7 @@ logger.propagate = False
 def fast_df_apply(df, func):
     """
     df <- датафрейм (срез колонок), к которому применяется функция
-    func <- python callableы, функция, которую необходимо применить к датафрейму
+    func <- python callable, функция, которую необходимо применить к датафрейму
     """
     cols = list(df.columns)
     data, index = [], []
