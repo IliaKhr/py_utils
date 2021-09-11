@@ -1,5 +1,6 @@
 import logging
 
+# Настраиваем логгер, тк он удобней простого print
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 ch = logging.StreamHandler()
@@ -13,6 +14,7 @@ logger.addHandler(ch)
 logger.propagate = False
 
 
+# Более быстрый apply для pd.DataFrame (копи-паст откуда-то со стаковерфлоу, не мой код)
 def fast_df_apply(df, func):
     """
     df <- датафрейм (срез колонок), к которому применяется функция
