@@ -1,3 +1,3 @@
 # py_utils
-My utilities for every python 3 code 
+My utilities for every python 3 code <br>
 Это репозиторий для удобного хранения различных общих функций / утилит для произвольного пайтон кода
