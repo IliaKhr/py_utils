@@ -31,4 +31,4 @@ def fast_df_apply(df, func):
 
     return pd.Series(data, index=index)
 
-logger.info('Библиотека импортирована')
+logger.info("Библиотека импортирована! ")
