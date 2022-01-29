@@ -23,8 +23,7 @@ def fast_df_apply(df, func):
     cols = list(df.columns)
     data, index = [], []
     for row in df.itertuples(index=True):
-#         row_dict = {f:v for f,v in zip(cols, row[1:])}
-#         data.append(func(row_dict))
+        
         row_list = [v for v in row[1:]]
         data.append(func(row_list))
         index.append(row[0])
