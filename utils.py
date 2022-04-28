@@ -20,6 +20,8 @@ def fast_df_apply(df, func):
     df <- датафрейм (срез колонок), к которому применяется функция
     func <- python callable, функция, которую необходимо применить к датафрейму
     """
+    import pandas as pd
+    
     cols = list(df.columns)
     data, index = [], []
     for row in df.itertuples(index=True):
