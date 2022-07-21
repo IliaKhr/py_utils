@@ -1,3 +1,4 @@
+import pandas as pd
 import logging
 
 # Настраиваем логгер, тк он удобней простого print
@@ -20,7 +21,6 @@ def fast_df_apply(df, func):
     df <- датафрейм (срез колонок), к которому применяется функция
     func <- python callable, функция, которую необходимо применить к датафрейму
     """
-    import pandas as pd
     
     cols = list(df.columns)
     data, index = [], []
@@ -31,5 +31,6 @@ def fast_df_apply(df, func):
         index.append(row[0])
 
     return pd.Series(data, index=index)
+
 
 logger.info("Библиотека импортирована! ")
